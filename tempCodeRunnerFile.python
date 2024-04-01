@@ -1,0 +1,78 @@
+# import cv2
+# import os
+
+# FILE_OUTPUT = 'output.mp4'
+
+# # Checks and deletes the output file
+# # You cant have a existing file or it will through an error
+# if os.path.isfile(FILE_OUTPUT):
+#     os.remove(FILE_OUTPUT)
+
+# #Capture video from webcam
+# vid_capture = cv2.VideoCapture(0)
+# vid_cod = cv2.VideoWriter_fourcc(*'XVID')
+# output = cv2.VideoWriter(FILE_OUTPUT, vid_cod, 20.0, (640,480))   # capture video into file....
+# #count = 0
+# while(True):
+#      # Capture each frame of webcam video
+#      ret,frame = vid_capture.read()
+#      cv2.imshow("My cam video", frame)
+#      output.write(frame)
+#      # Close and break the loop after pressing "x" key
+#      if cv2.waitKey(1) &0XFF == ord('x'):# or count==50:
+#          break
+
+# # close the already opened camera
+# vid_capture.release()
+# # close the already opened file
+# output.release()
+# # close the window and de-allocate any associated memory usage
+
+# cv2.destroyAllWindows()
+
+# cfQgQ2Y7FmxZW8OINQr7AMF2Yr7ic9I7bShs
+# bwHfcPPnrndwpCp5fwlta6N5yRKpBC9Kktap
+
+
+
+# import messagebird
+
+# # Replace 'your_messagebird_api_key' with your actual MessageBird API key
+# api_key = 'bwHfcPPnrndwpCp5fwlta6N5yRKpBC9Kktap'
+
+# # Initialize the MessageBird client
+# client = messagebird.Client(api_key)
+
+# try:
+#     # Replace '+911234567890' with your Indian phone number
+#     response = client.voice_message_create(
+#         recipients=['+917355578308'],  # Replace with your Indian phone number
+#         body='Hello, this is a test voice message.'  # Your voice message
+#     )
+#     print(f"Voice message initiated successfully. Voice message ID: {response.id}")
+# except messagebird.client.ErrorException as e:
+#     print(f"Error initiating voice message: {e}")
+
+
+
+from twilio.rest import Client
+
+# Replace 'your_twilio_account_sid' and 'your_twilio_auth_token' with your Twilio credentials
+account_sid = 'ACd9ec9e091bb4562a670c0e2d5741ac83'
+auth_token = 'dffda1157e9f03ae0bfd8f7e08fbe49b'
+
+# Initialize the Twilio client
+client = Client(account_sid, auth_token)
+
+try:
+    # Replace 'your_phone_number' with the recipient's phone number and '+1' with the appropriate country code
+    call = client.calls.create(
+        to='+917355578308',  # Recipient's phone number
+        from_='+19183763907',  # Your Twilio phone number
+        url='http://demo.twilio.com/docs/voice.xml'  # TwiML URL or call instructions
+    )
+    print(f"Call initiated successfully. Call SID: {call.sid}")
+except Exception as e:
+    print(f"Error initiating call: {str(e)}")
+
+
