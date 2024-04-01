@@ -6,8 +6,8 @@ from twilio.rest import Client
 #SO  KINDLY UNCOMMENT THEM 
 
 
-# account_sid = 'ACd9ec9e091bb4562a670c0e2d5741ac83'
-# auth_token = 'dffda1157e9f03ae0bfd8f7e08fbe49b'
+# account_sid = ''
+# auth_token = ''
 
 # Initialize the Twilio client
 client = Client(account_sid, auth_token)
