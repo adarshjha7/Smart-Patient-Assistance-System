@@ -18,3 +18,6 @@ In addition, if any mishappening or accident occurs, the patient can press the b
 
 
 
+
+![WhatsApp Image 2024-05-19 at 15 05 07_2f7858de]![WhatsApp Image 2024-05-19 at 15 05 06_ee148da1](https://github.com/adarshjha7/sPas/assets/98156564/e25f50f1-510f-4a58-bb80-5d1f0faa6b70)
+(https://github.com/adarshjha7/sPas/assets/98156564/d4af51aa-4eb5-4df0-9760-60518d117223)
